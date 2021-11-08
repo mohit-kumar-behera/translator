@@ -1,0 +1,46 @@
+.translator {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 0.5px solid lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.translator > *:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+textarea {
+  margin-top: 0.35rem;
+  width: 95%;
+  height: 150px;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 3.5px solid rebeccapurple;
+}
+textarea:focus {
+  outline: none;
+}
+textarea[disabled] {
+  background-color: rebeccapurple;
+  border-color: black;
+  color: #fff;
+}
+label {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+label[for='languageSelect'] {
+  margin-right: 0.7rem;
+}
+select {
+  width: 50%;
+  font-size: 1.05rem;
+  padding: 0.3rem 0.7rem;
+  border-color: rebeccapurple;
+  border-radius: 5px;
+  background-color: rgba(102, 51, 153, 0.05);
+}
