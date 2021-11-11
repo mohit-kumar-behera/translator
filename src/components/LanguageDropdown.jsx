@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './Translator.css';
 
 const LanguageDropdown = ({ label, onLanguageSelect, languages }) => {

@@ -2,9 +2,7 @@ import React from 'react';
 import './Translator.css';
 
 const TextInput = ({ label, text, onTextInput }) => {
-  const handleInputChange = (ev) => {
-    onTextInput(ev.target.value);
-  };
+  const handleInputChange = (ev) => onTextInput(ev.target.value);
 
   return (
     <div className="text-input">
