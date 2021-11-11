@@ -6,13 +6,9 @@ const TextOutput = ({ label, text, onUpdate, language, translatedText }) => {
   const [debounceText, setDebounceText] = useState(text);
 
   useEffect(() => {
-    const timer = setTimeout(function () {
-      setDebounceText(text);
-    }, 750);
+    const timer = setTimeout(() => setDebounceText(text), 750);
 
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(timer);
   }, [text]);
 
   useEffect(() => {
